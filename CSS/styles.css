@@ -1,0 +1,16 @@
+:root{
+    --red:#F54798;
+    --black:#252a34;
+    --gray:#878085;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+.navegacion
+{
+    background:var(--red)
+}
+.tamano
+{
+    font-size: 25px;
+}
