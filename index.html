@@ -4,13 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
+
     <title>Federico Roca | Desarrollador Web</title>
 </head>
 <body>
+    <header class="container-fluid row">
+        <div class="col-5 col-sm">
+            <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
+            <a class="traductor mt-1 ml-5">Translate</a>
+            </div>
+        </div>
+        <div class="col-7 alinear">
+            <a class="navbar-brand iconos" href="#">
+                <i class="fab fa-facebook "></i>
+                Facebook
+              </a>
+
+              <a class="navbar-brand iconos" href="#">
+                <i class="fab fa-instagram"></i>
+                Instagram
+              </a>
+
+              <a class="navbar-brand iconos" href="#">
+                <i class="fab fa-linkedin"></i>
+                Linkedin
+              </a>
+        </div>
+    </header>
+  
 
 
-    <nav class="navbar navbar-expand-lg navbar-light navegacion sticky-top pb-1 pt-1 " >
+    <nav class="navbar navbar-expand-lg custom-toggler navegacion sticky-top pb-1 pt-1 " >
         <a class="navbar-brand text-white tamano" href="#">Federico Roca</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -18,19 +45,19 @@
         <div class="collapse navbar-collapse " id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto ">
             <li class="nav-item active ">
-              <a class="nav-link " href="#">Inicio <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white " href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Proyectos</a>
+              <a class="nav-link text-white" href="#">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre mi</a>
+              <a class="nav-link text-white" href="#">Sobre mi</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Blog Personal</a>
+                <a class="nav-link text-white" href="#">Blog Personal</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Formulario contacto</a>
+                <a class="nav-link text-white" href="#">Formulario contacto</a>
               </li>
           </ul>
         </div>
@@ -98,13 +125,21 @@ Voluptates ipsa accusantium recusandae qui officia, sequi dolorem asperiores nam
 Maxime corrupti vitae quibusdam ipsum ad nostrum impedit fuga debitis, illo rerum minus hic mollitia, quos molestiae aut eos dolor quas, eaque ducimus. Tempora nesciunt commodi laborum, ipsa omnis cupiditate!</p>
 </sectioin>
 
-</body>
 
 
+
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'sp', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
 </html>
