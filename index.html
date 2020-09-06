@@ -11,24 +11,25 @@
     <title>Federico Roca | Desarrollador Web</title>
 </head>
 <body>
-    <header class="container-fluid row">
-        <div class="col-5 col-sm">
-            <div id="google_translate_element" style="position: relative; opacity: 0;"></div>
-            <a class="traductor mt-1 ml-5">Translate</a>
+    <header class="container-fluid row mt-1">
+         <div class="col-5">
+            <div id="google_translate_element" style="position: relative; opacity: 0;">
             </div>
-        </div>
-        <div class="col-7 alinear">
-            <a class="navbar-brand iconos" href="#">
+            <a class="traductor mt-1 ml-md-5 ml-sm-2">Translate</a>
+         </div>
+
+        <div class="col-7 alinear pr-md-5 pr-sm-0">
+            <a class="navbar-brand iconos" href="https://www.facebook.com/roca.fede" target="_blank">
                 <i class="fab fa-facebook "></i>
                 Facebook
               </a>
 
-              <a class="navbar-brand iconos" href="#">
+              <a class="navbar-brand iconos" href="https://www.instagram.com/rocafede" target="_blank">
                 <i class="fab fa-instagram"></i>
                 Instagram
               </a>
 
-              <a class="navbar-brand iconos" href="#">
+              <a class="navbar-brand iconos" href="https://www.linkedin.com/in/federico-roca/" target="_blank">
                 <i class="fab fa-linkedin"></i>
                 Linkedin
               </a>
@@ -65,23 +66,33 @@
 
 
 
-<section class="bienvenidos container mt-5 mb-5">
+<section class="bienvenidos container-fluid padding-extenso">
     <div class="row ">
-    <div class="col-md-6 pl-5 ">
-        <img src="img/desarrollo.png" class="imagen" alt="">
-    </div>
-    <div class="col-md-6 pr-5 pt-4  ">
+
+    <div class="text-white text-center container">
         <h1> Hola! Soy Federico Roca</h1>
-        <hr class="alert-dark">
-        <h3 class="justify-content-end">Desarrollador Web</h3>
-        <p> Mi idea es poder mostrar un poco de mis trabajos y proyectos como Desarrollador Web, ademas de crear diferentes blogs de recomendaciones sobre el diseño y el desarrollo.</p>
-        <a href="" class="btn btn-outline-secondary mt-2">Leer mas</a>
+        <hr class="alert-dark hr-white">
+        <h2 class="justify-content-end text-white">Desarrollador Web</h2>
+
+        <a href="" class="btn btn-lg btn-outline-light mt-4">Leer mas</a>
     </div>
     </div>
 </section>
 
-<section class="proyectos">
+<section class="proyectos container pt-5">   
 
+  <div class="border border-dark text-center tamano-caja p-1">
+      <h2>Proyectos</h2>
+      <hr class=" alert-dark hr-black">
+  </div>
+  
+  <div class="row flex-wrap justify-content-center mt-4 mb-5">
+   <img class="img-thumbnail m-3" src="img/imagen-prueba1.png" alt="">
+      <img class="img-thumbnail m-3"  src="img/imagen-prueba2.png" alt="">
+      <img class="img-thumbnail m-3"  src="img/imagen-prueba3.png" alt="">
+      <img class="img-thumbnail m-3"  src="img/imagen-prueba4.jpg" alt="">
+      <img class="img-thumbnail m-3"  src="img/imagen-prueba5.png" alt="">
+  </div>
 </section>
 
 <section class="sobre-mi">
@@ -92,7 +103,7 @@
 
 </section>
 
-<sectioin class="formulario">
+<section class="formulario">
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum architecto earum officia nesciunt reprehenderit, hic temporibus ducimus accusantium deleniti rerum ad dolores iure. Dignissimos ducimus asperiores tempore, illum incidunt temporibus.
 Cumque itaque aliquam corrupti repellendus quibusdam sapiente odit id, dicta molestias quam cum fuga? Odio, facere amet! Sit ab, facilis ipsa a, explicabo voluptatum neque provident qui, consectetur assumenda necessitatibus.
 Pariatur fuga ullam, ea quaerat, praesentium quidem eligendi magni consequuntur odit, totam dolore. Quod suscipit itaque, corporis minus culpa eum modi voluptate earum doloremque, harum laboriosam, aperiam dolore saepe ex.
@@ -123,7 +134,7 @@ Natus officia quod quibusdam aspernatur, quae perspiciatis hic rerum repellendus
 Fugit vero voluptatibus laudantium commodi nemo impedit similique, deleniti perferendis dolor voluptatem illum? Aliquam commodi voluptatibus quo nobis veniam obcaecati ratione a! Eum omnis velit iusto, esse repellat voluptatem repudiandae.
 Voluptates ipsa accusantium recusandae qui officia, sequi dolorem asperiores nam suscipit quas facere quis officiis veritatis, totam est placeat corporis accusamus debitis. Nulla exercitationem consectetur modi officia velit quisquam expedita.
 Maxime corrupti vitae quibusdam ipsum ad nostrum impedit fuga debitis, illo rerum minus hic mollitia, quos molestiae aut eos dolor quas, eaque ducimus. Tempora nesciunt commodi laborum, ipsa omnis cupiditate!</p>
-</sectioin>
+</section>
 
 
 
@@ -131,7 +142,7 @@ Maxime corrupti vitae quibusdam ipsum ad nostrum impedit fuga debitis, illo reru
 
 <script type="text/javascript">
     function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'sp', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      new google.translate.TranslateElement({pageLanguage: 'sp'},'google_translate_element');
     }
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

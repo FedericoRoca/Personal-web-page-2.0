@@ -3,7 +3,9 @@
     --black:#252a34;
     --gray:#878085;
     --red:#F04E51;
+    --gray2:#505B70;
 }
+
 body{
     font-family: 'Titillium Web', sans-serif;
 }
@@ -22,7 +24,7 @@ body{
 
 .imagen
 {
-    width: 100%;
+    width: 110%;
 }
 
 .traductor
@@ -33,37 +35,70 @@ body{
     top: 0; 
     z-index: -1;
     padding: 3px;
-    border: 2px solid var(--red);
+    border: 2px solid var(--black);
     color:var(--black);
     border-radius: 5px;
-    color:var(--black);
+
 }
 .traductor:hover
 {
     text-decoration: none;
     color:var(--black)
 }
-
 .alinear
 {
     display: flex;
     justify-content: flex-end;
-    padding-right: 5%;
-}
-.navbar-light
-{
-    color:red;
 }
 .custom-toggler .navbar-toggler-icon {
     background-image: url(../img/bar.png);
 }
-
 .custom-toggler.navbar-toggler {
     color: aliceblue;
     border-color: rgb(255, 255, 255);
 } 
-
 .iconos
 {
-    color:var(--red);
+    color:var(--pink);
+}
+.bienvenidos
+{
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url(../img/4.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    filter:  alpha(0.4);
+    padding-top: 50px;
+}
+.padding-extenso
+{   
+    padding-top: 150px;
+}
+.hr-white
+{
+    width: 40%;
+    height: 2px;
+}
+.hr-black
+{
+    width: 40%;
+    height: 2px;
+    background-color: var(--black);
+}
+
+img
+{
+    width: 300px;
+}
+.tamano-caja
+{   
+        text-align: center;
+        width: 40%;
+        margin: auto;
 }
