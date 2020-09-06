@@ -13,9 +13,9 @@
 <body>
     <header class="container-fluid row mt-1">
          <div class="col-5">
-            <div id="google_translate_element" style="position: relative; opacity: 0;">
+            <div id="google_translate_element" style="position: relative; padding-top: 8px; opacity: 0;">
             </div>
-            <a class="traductor mt-1 ml-md-5 ml-sm-2">Translate</a>
+            <a class="traductor mt-1 ml-4">Select Language</a>
          </div>
 
         <div class="col-7 alinear pr-md-5 pr-sm-0">
@@ -66,7 +66,7 @@
 
 
 
-<section class="bienvenidos container-fluid padding-extenso">
+<section class="padding-extenso bienvenidos container-fluid  curva-final">
     <div class="row ">
 
     <div class="text-white text-center container">
@@ -80,16 +80,16 @@
 </section>
 
 
-<section class="container servicios pt-5">
+<section class="container servicios pt-1">
   <h2 class="text-center">Servicios</h2>
   <hr class=" alert-dark hr-pequena mb-5">
   <div class="habilidades row text-center justify-content-center">
 
-    <div class="col-md-4 col-sm-12 pb-5"><h3>Desarrollo Web</h3><p class="pl-4 pr-4">Desarrollo de paginas y aplicaciones web con Bootstrap y Angular</p><img src="img/developer.png"></img></div>
+    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Desarrollo Web</h3><p class="pl-4 pr-4">Desarrollo de paginas y aplicaciones web con Bootstrap y Angular</p><img src="img/developer.png"></img></div>
 
-    <div class="col-md-4 col-sm-12 pb-5"><h3>Diseño Web</h3><p class="pl-4 pr-4">Diseño personalizado segun tus necesidades</p><img src="img/design2.png" alt="">
+    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Diseño Web</h3><p class="pl-4 pr-4">Diseño personalizado segun tus necesidades</p><img src="img/design2.png" alt="">
     </div>
-    <div class="col-md-4 col-sm-12 pb-5"><h3>Responsive</h3><p class="pl-4 pr-4">Totalmente adapltable para cualquier dispositivo</p><img src="img/responsive.jpg"></img>
+    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Responsive</h3><p class="pl-4 pr-4">Totalmente adapltable para cualquier dispositivo</p><img src="img/responsive.jpg"></img>
   </div>
 </section>
 
@@ -98,14 +98,14 @@
 
 
 
-<section class="proyectos container pt-5 mt-4">   
+<section class="proyectos container-fluid curva-inicio ">   
 
-  <div class="border border-dark text-center tamano-caja p-1">
-      <h2>Proyectos</h2>
+  <div class="border border-light text-center tamano-caja p-1 margen-extenso ">
+      <h2 class="text-white">Proyectos</h2>
       <hr class=" alert-dark hr-black">
   </div>
 
-  <div class="row flex-wrap justify-content-center mt-5 mb-5 fotos-proyectos">
+  <div class="row flex-wrap justify-content-center mt-5 pb-5 fotos-proyectos pr-5 pl-5">
    <img class="img-thumbnail m-3" src="img/imagen-prueba1.png" alt="">
       <img class="img-thumbnail m-3"  src="img/imagen-prueba2.png" alt="">
       <img class="img-thumbnail m-3"  src="img/imagen-prueba3.png" alt="">
@@ -130,14 +130,13 @@
 
 
 
+
 <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'sp'},'google_translate_element');
-    }
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'sp', includedLanguages: 'en,es,pt,fr,de,pt,it,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
+  }
   </script>
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
