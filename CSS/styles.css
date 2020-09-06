@@ -69,17 +69,29 @@ body{
       ), url(../img/4.jpg);
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 90vh; /*si anda mal volver a 100*/
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     filter:  alpha(0.4);
     padding-top: 50px;
 }
+
 .padding-extenso
 {   
     padding-top: 150px;
 }
+
+.servicios .habilidades img
+{
+    width: 150px;
+}
+
+
+
+
+
+
 .hr-white
 {
     width: 40%;
@@ -91,8 +103,13 @@ body{
     height: 2px;
     background-color: var(--black);
 }
-
-img
+.hr-pequena
+{
+    width: 20%;
+    height: 2px;
+    background-color: var(--black);
+}
+.proyectos .fotos-proyectos > img
 {
     width: 300px;
 }
@@ -102,3 +119,4 @@ img
         width: 40%;
         margin: auto;
 }
+
