@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +11,10 @@
     <title>Federico Roca | Desarrollador Web</title>
 </head>
 <body>
+
+<!------------------Cabecera-------------------->
     <header class="container-fluid row mt-1">
-         <div class="col-5">
+         <div class="col-5 mb-2">
             <div id="google_translate_element" style="position: relative; padding-top: 8px; opacity: 0;">
             </div>
             <a class="traductor mt-1 ml-4">Select Language</a>
@@ -37,7 +39,7 @@
     </header>
   
 
-
+<!------------------Barra Navegacion-------------------->
     <nav class="navbar navbar-expand-lg custom-toggler navegacion sticky-top pb-1 pt-1 container-fluid"> <!--Si tiene problemas sacar container fluid-->
         <a class="navbar-brand text-white tamano-letra" href="#">Federico Roca</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,7 +67,7 @@
       </nav>
 
 
-
+<!------------------Bienvenidos-------------------->
 <section class="padding-top-extenso bienvenidos container-fluid  curva-final">
     <div class="row ">
 
@@ -79,11 +81,11 @@
     </div>
 </section>
 
-
+<!------------------Servicios-------------------->
 <section class="container servicios pt-1">
   <h2 class="text-center">SERVICIOS</h2>
   <hr class=" alert-dark hr-pequena mb-5">
-  <div class="habilidades row text-center justify-content-center">
+  <div class="tipos row text-center justify-content-center">
 
     <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Desarrollo Web</h3><p class="pl-4 pr-4">Desarrollo de paginas y aplicaciones web con Bootstrap y Angular</p><img src="img/developer.png"></img></div>
 
@@ -96,11 +98,11 @@
 
 
 
-
+<!------------------Proyectos-------------------->
 
 <section class="proyectos container-fluid curva-inicio pb-5">   
 
-  <div class="border border-light text-center tamano-caja p-1 margin-top-extenso">
+  <div class="mas-borde-blanco text-center tamano-caja p-1 margin-top-extenso">
       <h2 class="text-white">PROYECTOS</h2>
       <hr class=" alert-dark hr-black">
   </div>
@@ -114,55 +116,85 @@
   </div>
 </section>
 
+<!------------------Sobre-Mi-------------------->
 <section class="sobre-mi container-fluid margin-top-extenso ">
-  <div class="border border-dark text-center tamano-caja p-1 ">
+  <div class=" text-center tamano-caja p-1 ">
   <h2>SOBRE MI</h2>
   <hr class=" alert-dark hr-black">
   </div>
   <p class="text-center mt-5 pr-5 pl-5 mb-5">Mi pasión por el diseño comenzó trabajando como operador de video e iluminación en diferentes teatros y discos de Argentina.<br> Al mismo tiempo estudiaba ingenieria en Computacion en la Universidad nacional de Córdoba. <br>Aqui decidi combinar la programacion y el diseno en la creacion de sitios y aplicaciones web.<br> Por ello realice cursos dados por IBM, Harvard y Google para perfeccionarme.<br>
-
     </p>
     <div class="text-center mb-5">
       <div class="row d-flex align-items-center instituciones pr-5 pl-5 mb-4">
         <div class="col-md-4 col-sm-12 mb-3"><img src="img/harvard2.png" alt=""></div>
         <div class="col-md-4 col-sm-12 mb-3"> <img src="img/unc.png" alt="Universidad Nacional De Cordoba">         <p class="mt-2"><b> Bachillerato Universitario en ciencias aplicadas.</b>
           <br><b> Ingeniería en Computación: </b> Estudios:75%.
-           </p></div>
+           </p>
+        </div>
         <div class="col-md-4 col-sm-12 mb-3"><img src="img/ibm2.png" alt=""></div>
       </div>
-     
-
     </div>
   </section>
-  <section class="cursos container-fluid">
-    <div class="container">
-      <h2 class="text-center mt-5 pt-5 ">HABILIDADES</h2>
-      <hr class="mt-4 alert-dark hr-black">
+  <div class="fondo">
+<!------------------Habilidades-------------------->
+  <section class="habilidades container-fluid ">
+    <div class="container pt-5">
+      <div class="mas-borde text-center tamano-caja p-1 ">
+      <h2 class="text-center mt-2">HABILIDADES</h2>
+      <hr class="mt-3 alert-dark hr-black">
+    </div>
       <div class="row text-center m-5">
         <div class="col-md-6 col-sm-12"><img src="img/primera-col.png" alt="">
         </div>
-        <div class="col-md-6 col-sm-12"><img src="img/segunda-col.png" alt=""></div>
+        <div class="col-md-6 col-sm-12"><img src="img/segunda-col.png" alt="">
+        </div>
       </div>
     </div>
   </section>
+
+<!------------------FORMULARIO-------------------->
+
+<section class="container pt-3 formulario text-white mas-borde mb-5 " id="contacto">
   
-<section class="educacion">
-    
+  <div class="text-center  mb-3 p-1 ">
+      <h2 class="text-center">Formulario de contacto</h2>
+      <hr class="mt-4 alert-dark hr-black">
+  </div>
+  <div >
+      <form  action="enviar.php" method="post">
+        <div class="form-group">
+          <label for="user">Nombre:</label>
+          <input type="text" id="user" name="user" placeholder="Ingresa tu nombre" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electronico:</label>
+          <input type="text" id="email" name="email" placeholder="Ingresa tu email" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="Escribir mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" placeholder="Escribe aqui" class="form-control" required></textarea>
+        </div>
+          <div class="send mb-4 text-center">
+              <button type="submit" class="btn btn-lg btn-outline-light">
+                 Enviar 
+              </button>
+          </div>
+
+          <div class="mensaje-form ">
+              <p class="text-center">*Escriba por cualquier consulta, se le respondera lo antes posible</p>
+          </div>
+
+      </form>
+  </div>
 </section>
 
-<section class="formulario mt-5">
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut tempore sint, ea ipsam quod assumenda maxime vitae labore dolore inventore dolorem. Sapiente vitae voluptates temporibus quae aliquid nobis ex.
-Inventore expedita fugiat cum modi, omnis possimus veritatis accusantium obcaecati ad rem sit aperiam nemo? Repellat architecto maxime quibusdam vitae et laboriosam reiciendis voluptates magni tenetur debitis laudantium, suscipit quasi.
-Iusto, consequuntur minima officia nemo vero suscipit! A possimus quo culpa obcaecati laboriosam quos dolorum eaque libero, totam similique unde voluptatum velit quisquam fugit voluptas non suscipit! Neque, consectetur fuga.
-Temporibus atque tenetur mollitia ipsa deleniti quis aspernatur molestias veniam, vel, quae at error iste consequatur officiis laudantium, eligendi minus. Explicabo aut hic nesciunt ipsam beatae distinctio commodi rerum eligendi.
-Recusandae porro iste molestiae voluptates nemo perferendis, blanditiis facere veniam nostrum sint velit commodi, nulla error. Suscipit, iusto exercitationem porro, totam hic ipsa corrupti, distinctio nam dicta eius natus consequuntur?
-Ipsa corrupti, unde at accusamus culpa labore aliquam nulla id magni deleniti eaque iste inventore, officia repellendus mollitia molestias, magnam sed voluptatum. Iste consequuntur debitis a quae dolore enim libero.</p>
-</section>
+<!------------------Footer(pie de pgina)-------------------->
 
 
-
-
-
+<footer class="copyright d-flex justify-content-center container-fluid pt-3">
+      <p class="text-white">&copy; Federico Roca - 2020 | Todos los derechos reservados</p>
+</footer>
+</div>
 
 <script type="text/javascript">
   function googleTranslateElementInit() {

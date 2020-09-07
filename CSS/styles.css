@@ -7,6 +7,8 @@
 }
 
 body{
+    margin:0px;
+    padding:0px;
     font-family: 'Titillium Web', sans-serif;
 }
 /*---------------CABECERA------------*/
@@ -73,7 +75,7 @@ nav .custom-toggler.navbar-toggler {
 
 
 /*---------------SERVICIOS------------*/
-.servicios .habilidades img
+.servicios .tipos img
 {
     width: 150px;
 }
@@ -91,7 +93,6 @@ nav .custom-toggler.navbar-toggler {
     background-position: center;
     background-size: cover;
     padding-top: 50px;
-
     border-bottom-right-radius:50% 5%;
     border-bottom-left-radius: 50% 5%;
 }
@@ -101,12 +102,6 @@ nav .custom-toggler.navbar-toggler {
     width: 300px;
 }
 
-
-p
-{
-    font-size: 19px;
-}
-
 .instituciones img
 {
     width: 250px;
@@ -114,20 +109,50 @@ p
 
 .tamano-caja
 {   
-        width: 40%;
+        width: 50%;
         margin: auto;
 }
 
-.cursos
-{
-    background:whitesmoke
-}
-.cursos .barras
+.habilidades .barras
 {
    display: flex;
    justify-content: center;
 }
+.habilidades img
+{
+    width: 180px;
+}
 
+/* FORMULARIO*/
+
+.formulario
+{
+    width: 70%;
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(../img/1.jpg);
+      background-attachment: fixed;
+}
+
+.copyright
+{   border-top-color: var(--black);
+    border-top-style: solid;
+    background-image:    linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+      ), url(../img/1.jpg);
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondo
+{
+    background:whitesmoke;
+}
 /*GENERALES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*si anda mal borrar*/
 .curva-final::after,.curva-final::before
@@ -187,4 +212,19 @@ p
     width: 20%;
     height: 2px;
     background-color: var(--black);
+}
+p
+{
+    font-size: 19px;
+}
+
+.mas-borde
+{
+    border:2px solid black;
+    border-radius: 6px;
+}
+.mas-borde-blanco
+{
+    border:1px solid white;
+    border-radius: 6px;
 }
