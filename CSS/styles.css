@@ -9,27 +9,8 @@
 body{
     font-family: 'Titillium Web', sans-serif;
 }
-
-
-.navegacion
-{
-    background:var(--black);
-}
-.boton
-{
-    background:var(--black);
-}
-.tamano
-{
-    font-size: 25px;
-}
-
-.imagen
-{
-    width: 110%;
-}
-
-.traductor
+/*---------------CABECERA------------*/
+header .traductor
 {   
     margin-left:10px;
     position: absolute; 
@@ -41,27 +22,40 @@ body{
     color:var(--black);
     border-radius: 5px;
 }
-.traductor:hover
+header .traductor:hover
 {
     text-decoration: none;
     color:var(--black)
 }
-.alinear
+header .alinear
 {
     display: flex;
     justify-content: flex-end;
 }
-.custom-toggler .navbar-toggler-icon {
-    background-image: url(../img/bar.png);
-}
-.custom-toggler.navbar-toggler {
-    color: aliceblue;
-    border-color: rgb(255, 255, 255);
-} 
-.iconos
+
+header .iconos
 {
     color:var(--pink);
 }
+
+/*---------------BARRA NAVEGACION------------*/
+.navegacion
+{
+    background:var(--black);
+}
+
+nav .tamano-letra
+{
+    font-size: 25px;
+}
+nav .custom-toggler .navbar-toggler-icon {
+    background-image: url(../img/bar.png);
+}
+nav .custom-toggler.navbar-toggler {
+    color: aliceblue;
+    border-color: rgb(255, 255, 255);
+} 
+/*---------------BIENVENIDOS------------*/
 .bienvenidos
 {
     background-image:    linear-gradient(
@@ -78,32 +72,12 @@ body{
 }
 
 
-
+/*---------------SERVICIOS------------*/
 .servicios .habilidades img
 {
     width: 150px;
 }
-
-
-.hr-white
-{
-    width: 40%;
-    height: 2px;
-}
-.hr-black
-{
-    width: 40%;
-    height: 2px;
-    background-color: var(--black);
-}
-.hr-pequena
-{
-    width: 20%;
-    height: 2px;
-    background-color: var(--black);
-}
-
-
+/*---------------PROYECTOS------------*/
 .proyectos
 {
     background-image:    linear-gradient(
@@ -122,16 +96,9 @@ body{
     border-bottom-left-radius: 50% 5%;
 }
 
-
 .proyectos .fotos-proyectos > img
 {
     width: 300px;
-}
-.tamano-caja
-{   
-        text-align: center;
-        width: 40%;
-        margin: auto;
 }
 
 
@@ -140,10 +107,21 @@ p
     font-size: 19px;
 }
 
+.instituciones img
+{
+    width: 250px;
+}
 
+.tamano-caja
+{   
+        width: 40%;
+        margin: auto;
+}
 
-
-
+.cursos
+{
+    background:whitesmoke
+}
 .cursos .barras
 {
    display: flex;
@@ -193,7 +171,20 @@ p
     margin-bottom: 100px;
 }
 
-.sin-fondo
+.hr-white
 {
-    background:white;
+    width: 40%;
+    height: 2px;
+}
+.hr-black
+{
+    width: 40%;
+    height: 2px;
+    background-color: var(--black);
+}
+.hr-pequena
+{
+    width: 20%;
+    height: 2px;
+    background-color: var(--black);
 }
