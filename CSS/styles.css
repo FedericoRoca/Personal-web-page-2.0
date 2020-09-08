@@ -41,6 +41,11 @@ header .iconos
 {
     color:var(--pink);
 }
+header .iconos:hover
+{
+    color: var(--black);
+    transform: scale(1.03);
+}
 
 /*---------------BARRA NAVEGACION------------*/
 .navegacion
@@ -59,6 +64,10 @@ nav .tamano-letra
     color: aliceblue;
     border-color: rgb(255, 255, 255);
 } 
+.nav-item:hover
+{
+    text-decoration: underline white;
+}
 /*---------------BIENVENIDOS------------*/
 .bienvenidos
 {
