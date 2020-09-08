@@ -100,8 +100,14 @@ nav .custom-toggler.navbar-toggler {
 .proyectos .fotos-proyectos > img
 {
     width: 300px;
+    cursor: pointer;
+    filter:grayscale(1);
 }
-
+.proyectos .fotos-proyectos > img:hover{
+    transform:scale(1.2);
+    filter:none;
+    transition-duration:300ms;
+}
 .instituciones img
 {
     width: 250px;
@@ -184,6 +190,10 @@ nav .custom-toggler.navbar-toggler {
     padding-top: 150px;
 }
 .margin-top-extenso
+{
+    margin-top: 70px;
+}
+.margin-top-muy-extenso
 {
     margin-top: 100px;
 }
