@@ -106,7 +106,7 @@ nav .tamano-letra
     filter:grayscale(1);
 }
 .proyectos .fotos-proyectos > img:hover{
-    transform:scale(1.2);
+    transform:scale(1.5);
     filter:none;
     transition-duration:300ms;
 }
@@ -225,9 +225,9 @@ nav .tamano-letra
     height: 2px;
     background-color: var(--black);
 }
-p
+p,label
 {
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .mas-borde
