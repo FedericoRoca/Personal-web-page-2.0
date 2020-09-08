@@ -5,7 +5,9 @@
     --red:#F04E51;
     --gray2:#505B70;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body{
     margin:0px;
     padding:0px;
@@ -50,10 +52,10 @@ nav .tamano-letra
 {
     font-size: 25px;
 }
-nav .custom-toggler .navbar-toggler-icon {
+.custom-toggler .navbar-toggler-icon {
     background-image: url(../img/bar.png);
 }
-nav .custom-toggler.navbar-toggler {
+.custom-toggler.navbar-toggler {
     color: aliceblue;
     border-color: rgb(255, 255, 255);
 } 
@@ -135,8 +137,8 @@ nav .custom-toggler.navbar-toggler {
 {
     width: 70%;
     background-image:    linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
       ), url(../img/1.jpg);
       background-attachment: fixed;
 }
@@ -231,6 +233,11 @@ p
 .mas-borde
 {
     border:2px solid black;
+    border-radius: 6px;
+}
+.mas-borde-2
+{
+    border:3px solid var(--black);
     border-radius: 6px;
 }
 .mas-borde-blanco

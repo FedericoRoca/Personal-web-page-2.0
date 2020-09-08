@@ -20,7 +20,7 @@
             <a class="traductor mt-1 ml-4">Select Language</a>
          </div>
 
-        <div class="col-7 alinear pr-md-5 pr-sm-0">
+        <div class="col-7 alinear pr-md-5 pr-sm-1">
             <a class="navbar-brand iconos" href="https://www.facebook.com/roca.fede" target="_blank">
                 <i class="fab fa-facebook "></i>
                 Facebook
@@ -51,16 +51,16 @@
               <a class="nav-link text-white " href="#">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Proyectos</a>
+              <a class="nav-link text-white" href="#proyectos">Proyectos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Sobre mi</a>
+              <a class="nav-link text-white" href="#sobre-mi">Sobre mi</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link text-white" href="#">Blog Personal</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link text-white" href="#">Formulario contacto</a>
+                <a class="nav-link text-white" href="#formulario">Formulario contacto</a>
               </li>
           </ul>
         </div>
@@ -76,14 +76,16 @@
         <hr class="alert-dark hr-white">
         <h2 class="justify-content-end text-white">Desarrollador Web</h2>
 
-        <a href="" class="btn btn-lg btn-outline-light mt-4">Leer mas</a>
+        <a href="#servicios" class="btn btn-lg btn-outline-light mt-4">Leer mas</a>
     </div>
+   
     </div>
-</section>
 
+</section>
+<div class="container" id="servicios"></div>
 <!------------------Servicios-------------------->
-<section class="container servicios pt-1">
-  <h2 class="text-center">SERVICIOS</h2>
+<section class="container mt-5 mb-5 servicios pt-1" >
+  <h2 class="text-center" >SERVICIOS</h2>
   <hr class=" alert-dark hr-pequena mb-5">
   <div class="tipos row text-center justify-content-center">
 
@@ -100,9 +102,9 @@
 
 <!------------------Proyectos-------------------->
 
-<section class="proyectos container-fluid curva-inicio pb-5">   
-
-  <div class="mas-borde-blanco text-center tamano-caja p-1 margin-top-muy-extenso">
+<section  class=" proyectos container-fluid curva-inicio pb-5">   
+<div id="proyectos" class="mt-3"></div>
+  <div  class="mas-borde-blanco text-center tamano-caja p-1 margin-top-muy-extenso">
       <h2 class="text-white">PROYECTOS</h2>
       <hr class=" alert-dark hr-black">
   </div>
@@ -114,10 +116,11 @@
       <img class="img-thumbnail m-4"  src="img/imagen-prueba4.jpg" alt="">
       <img class="img-thumbnail m-4"  src="img/imagen-prueba5.png" alt="">
   </div>
+ <div  id="sobre-mi"></div>
 </section>
 
 <!------------------Sobre-Mi-------------------->
-<section class="sobre-mi container-fluid margin-top-extenso ">
+<section  class="sobre-mi container-fluid margin-top-extenso ">
   <div class=" text-center tamano-caja p-1 ">
   <h2>SOBRE MI</h2>
   <hr class=" alert-dark hr-black">
@@ -154,14 +157,14 @@
 
 <!------------------FORMULARIO-------------------->
 
-<section class="container pt-3 formulario text-white mas-borde mb-5 " id="contacto">
+<section id="formulario" class="container pt-3 formulario text-white mas-borde-2 mb-5 " id="contacto">
   
-  <div class="text-center  mb-3 p-1 ">
+  <div class="text-center  mb-3 p-1 " >
       <h2 class="text-center">Formulario de contacto</h2>
       <hr class="mt-4 alert-dark hr-black">
   </div>
   <div >
-      <form  action="enviar.php" method="post">
+      <form action="enviar.php" method="post">
         <div class="form-group">
           <label for="user">Nombre:</label>
           <input type="text" id="user" name="user" placeholder="Ingresa tu nombre" class="form-control" required>
