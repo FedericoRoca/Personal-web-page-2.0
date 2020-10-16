@@ -1,5 +1,5 @@
 :root{
-    --pink:#F54798;
+    --pink:#630873;
     --black:#252a34;
     --gray:#878085;
     --red:#F04E51;
@@ -12,6 +12,7 @@ body{
     margin:0px;
     padding:0px;
     font-family: 'Titillium Web', sans-serif;
+    left: 0;
 }
 /*---------------CABECERA------------*/
 header .traductor
@@ -50,7 +51,8 @@ header .iconos:hover
 /*---------------BARRA NAVEGACION------------*/
 .navegacion
 {
-    background:var(--black);
+    
+    background:linear-gradient(var(--black),#630873);
 }
 
 nav .tamano-letra
@@ -74,7 +76,7 @@ nav .tamano-letra
     background-image:    linear-gradient(
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
-      ), url(../img/4.jpg);
+      ), url(../img/principal.jpg);
     position: relative;
     width: 100%;
     height: 100vh; 
@@ -94,8 +96,8 @@ nav .tamano-letra
 .proyectos
 {
     background-image:    linear-gradient(
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.3)
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
       ), url(../img/1.jpg);
     position: relative;
     width: 100%;
@@ -111,13 +113,14 @@ nav .tamano-letra
 .proyectos .fotos-proyectos > img
 {
     width: 300px;
+    height: 200px;
     cursor: pointer;
     filter:grayscale(1);
 }
 .proyectos .fotos-proyectos > img:hover{
-    transform:scale(1.5);
+    transform:scale(2);
     filter:none;
-    transition-duration:300ms;
+    transition-duration:500ms;
 }
 .instituciones img
 {
@@ -172,6 +175,14 @@ nav .tamano-letra
 }
 /*GENERALES!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /*si anda mal borrar*/
+.h1
+{
+    font-size:50px;
+}
+.h2,.h3
+{
+    font-size:43px;
+}
 .curva-final::after,.curva-final::before
 {
     content:'';
@@ -198,7 +209,7 @@ nav .tamano-letra
 
 .padding-top-extenso
 {   
-    padding-top: 150px;
+    padding-top: 200px;
 }
 .margin-top-extenso
 {
@@ -253,4 +264,121 @@ p,label
 {
     border:1px solid white;
     border-radius: 6px;
+}
+
+#color-rosa
+{
+    background-color: #DF336B!important;
+}
+
+
+.contenedor {
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    border:2px solid var(--black);
+}
+.contenedor:hover
+{
+    cursor: pointer;
+}
+.sacar-ref
+{ 
+    color: white;
+    text-decoration: none;
+}
+.sacar-ref:hover
+{ 
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* MEDIA*/
+@media only screen and (max-width:780px)
+{
+    .desaparecer
+    {
+        height: 0px;
+        visibility: hidden;
+    }
+    header .alinear
+    {
+        display:flex;
+        justify-content: center;
+        padding-left: 40px;
+    }
+    header .alinear a{
+        font-size:19px;
+        padding: 0px;
+        margin: 7px;
+    }
+    
+    .proyectos .fotos-proyectos > img
+    {
+        width: 320px;
+        height: 240px;
+        filter:none;
+    }
+    .proyectos .fotos-proyectos > img:hover{
+        transform:none;
+        filter:none;
+    }
+    .sobre-mi 
+    {
+        padding: 0px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .h1
+    {
+        font-size:30px;
+    }
+    .h2,.h3
+    {
+        font-size:25px;
+    }
+    p{
+        font-size: 19px;
+    }
+    .bienvenidos, .copyright, .proyectos, .formulario
+    {
+        background-attachment:scroll
+    }
+
+}
+@media only screen and (max-width:550px)
+{
+    .proyectos .fotos-proyectos > img
+    {
+        width: 300px;
+        height: 230px;
+        filter:none;
+    }
+}
+@media only screen and (max-width:400px)
+{
+    .proyectos .fotos-proyectos > img
+    {
+        width: 200px;
+        height: 150px;
+        filter:none;
+    }
+}
+@media only screen and (max-width:330px)
+{
+    .h2,.h3
+    {
+        font-size:20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    header .alinear a{
+        font-size:15px;
+        padding: 0px;
+        margin: 7px;
+    }
 }

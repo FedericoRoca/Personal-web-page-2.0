@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="sp">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=1.0, minimum-scale=0.86">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/skills.css">
-
-
-
 
 
     
@@ -20,13 +17,13 @@
 
 <!------------------Cabecera-------------------->
     <header class="container-fluid row mt-1">
-         <div class="col-5 mb-2">
+         <div class="col-md-5 col-sm-12 mb-2 desaparecer">
             <div id="google_translate_element" style="position: relative; padding-top: 8px; opacity: 0;">
             </div>
             <a class="traductor mt-1 ml-4">Select Language</a>
          </div>
 
-        <div class="col-7 alinear pr-md-2 pr-sm-1">
+        <div class="col-md-7 col-sm-12 alinear pr-md-2">
             <a class="navbar-brand iconos" href="https://www.facebook.com/roca.fede" target="_blank">
                 <i class="fab fa-facebook "></i>
                 Facebook
@@ -78,9 +75,9 @@
     <div class="row ">
 
     <div class="text-white text-center container">
-        <h1> Hola! Soy Federico Roca</h1>
+        <h1 class="h1"> Hola! Soy Federico Roca</h1>
         <hr class="alert-dark hr-white">
-        <h2 class="justify-content-end text-white">Desarrollador Web</h2>
+        <h2 class="justify-content-end text-white h2">Desarrollador Web</h2>
 
         <a href="#servicios" class="btn btn-lg btn-outline-light mt-4">Leer mas</a>
     </div>
@@ -91,16 +88,27 @@
 <div class="container" id="servicios"></div>
 <!------------------Servicios-------------------->
 <section class="container mt-5 mb-5 servicios pt-1" >
-  <h2 class="text-center" >SERVICIOS</h2>
+  <h2 class="text-center h2" >SERVICIOS</h2>
   <hr class=" alert-dark hr-pequena mb-5">
   <div class="tipos row text-center justify-content-center">
 
-    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Desarrollo Web</h3><p class="pl-4 pr-4">Desarrollo de paginas y aplicaciones web con Bootstrap y Angular</p><img src="img/developer.png"></img></div>
-
-    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Diseño Web</h3><p class="pl-4 pr-4">Diseño personalizado segun tus necesidades</p><img src="img/design2.png" alt="">
+    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1">
+      <h3 class="h3">Desarrollo Web</h3>
+      <p class="pl-4 pr-4">Desarrollo de paginas y aplicaciones web con Bootstrap y Angular</p>
+      <img src="img/developer.png" alt="">
     </div>
-    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1"><h3>Responsive</h3><p class="pl-4 pr-4">Totalmente adapltable para cualquier dispositivo</p><img src="img/responsive.jpg"></img>
-  </div>
+
+    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1">
+      <h3 class="h3">Diseño Web</h3>
+      <p class="pl-4 pr-4">Diseño personalizado segun tus necesidades</p>
+      <img src="img/design2.png" alt="">
+    </div>
+    <div class="col-md-4 col-sm-12 pb-sm-5 pb-md-1">
+      <h3 class="h3">Responsive</h3>
+      <p class="pl-4 pr-4">Totalmente adapltable para cualquier dispositivo</p>
+      <img src="img/responsive.jpg" alt="">
+    </div>
+    </div>
 </section>
 
 
@@ -111,16 +119,25 @@
 <section  class=" proyectos container-fluid curva-inicio pb-5">   
 <div id="proyectos" class="mt-3"></div>
   <div  class="mas-borde-blanco text-center tamano-caja p-1 margin-top-muy-extenso">
-      <h2 class="text-white">PROYECTOS</h2>
-      <hr class=" alert-dark hr-black">
+      <h2 class="text-white h2">PROYECTOS</h2>
+      <hr class=" alert-dark hr-black mb-2">
   </div>
 
-  <div class="row flex-wrap justify-content-center mt-5 pb-5 fotos-proyectos pr-5 pl-5">
-   <img class="img-thumbnail m-5" src="img/imagen-prueba1.png" alt="">
-      <img class="img-thumbnail m-5"  src="img/imagen-prueba2.png" alt="">
-      <img class="img-thumbnail m-5"  src="img/imagen-prueba3.png" alt="">
-      <img class="img-thumbnail m-5"  src="img/imagen-prueba4.jpg" alt="">
-      <img class="img-thumbnail m-5"  src="img/imagen-prueba5.png" alt="">
+  <div class="row flex-wrap justify-content-center mt-md-5 mt-sm-4 pb-5 fotos-proyectos pr-5 pl-5">
+
+               <!-- Button trigger modal -->
+   <div class="row container-fluid mt-4">
+    <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center">
+      <div class="contenedor mb-4">
+          <img src="img/meushar1.jpg" alt="" class="img-fluid" data-toggle="modal" data-target="#meushar" >
+      </div>
+    </div>
+     <div class="col-xl-6 col-md-6 col-sm-12 d-flex justify-content-center">
+        <div class="contenedor">
+          <img src="img/modelo.jpeg" alt="" class="img-fluid" data-toggle="modal" data-target="#guadalupe" >
+       </div>
+    </div>
+    </div>    
   </div>
  <div  id="sobre-mi"></div>
 </section>
@@ -128,19 +145,19 @@
 <!------------------Sobre-Mi-------------------->
 <section  class="sobre-mi container-fluid margin-top-extenso ">
   <div class=" text-center tamano-caja p-1 ">
-  <h2>SOBRE MI</h2>
+  <h2 class="h2">SOBRE MI</h2>
   <hr class=" alert-dark hr-black">
   </div>
   <p class="text-center mt-4 pr-5 pl-5 mb-5">Mi pasión por el diseño comenzó trabajando como operador de video e iluminación en diferentes teatros y discos de Argentina.<br> Al mismo tiempo estudiaba ingenieria en Computacion en la Universidad nacional de Córdoba. <br>Aqui decidi combinar la programacion y el diseno en la creacion de sitios y aplicaciones web.<br> Por ello realice cursos dados por IBM, Harvard y Google para perfeccionarme.<br>
     </p>
     <div class="text-center mb-5">
-      <div class="row d-flex align-items-center instituciones pr-5 pl-5 mb-4">
-        <div class="col-md-4 col-sm-12 mb-3"><img src="img/harvard2.png" alt=""></div>
-        <div class="col-md-4 col-sm-12 mb-3"> <img src="img/unc.png" alt="Universidad Nacional De Cordoba">         <p class="mt-2"><b> Bachillerato Universitario en ciencias aplicadas.</b>
+      <div class=" text-center instituciones pr-5 pl-5 mb-4">
+
+        <div> <img src="img/unc.png" alt="Universidad Nacional De Cordoba"><p class="mt-2"><b> Bachillerato Universitario en ciencias aplicadas.</b>
           <br><b> Ingeniería en Computación: </b> Estudios:75%.
            </p>
         </div>
-        <div class="col-md-4 col-sm-12 mb-3"><img src="img/ibm2.png" alt=""></div>
+
       </div>
     </div>
   </section>
@@ -149,7 +166,7 @@
   <section class="habilidades container-fluid ">
     <div class="container pt-5">
       <div class="mas-borde text-center tamano-caja p-1 ">
-      <h2 class="text-center mt-2">HABILIDADES</h2>
+      <h2 class="text-center mt-2 h2">APTITUDES</h2>
       <hr class="mt-3 alert-dark hr-black">
     </div>
     <div class="container mt-5">
@@ -179,12 +196,6 @@
             </div>
           </div>
 
-          <div class="progress">
-            <div class="progress-bar" id="angular">
-              <img class="ml-4" src="img/iconos/angular.png" alt="ANGULAR">
-              <div class="progress-value">50%</div>
-            </div>
-          </div>
 
         </div>
 
@@ -197,18 +208,13 @@
           </div>
 
           <div class="progress">
-            <div class="progress-bar" id="node">
-              <img class="ml-4" src="img/iconos/node.png" id="nodeimg" alt="NODE">
-              <div class="progress-value">30%</div>
-            </div>
-          </div>
-
-          <div class="progress">
             <div class="progress-bar" id="sql">
               <img class="ml-4" src="img/iconos/sql.png" id="sqlimg" alt="SQL">
               <div class="progress-value">80%</div>
             </div>
           </div>
+
+
         </div>
       </div>
     </div>
@@ -217,15 +223,15 @@
   </section>
 
 <!------------------FORMULARIO-------------------->
-<div class="mb-5 container"  id="formulario"><p><br></p></div>
-<section    class="mt-5 container pt-3 formulario text-white mas-borde-2 mb-5">
+<div class="mb-md-5 mb-sm-1 container"  id="formulario"><p><br></p></div>
+<section  class="mt-md-5 mt-sm-1 container pt-3 formulario text-white mas-borde-2 mb-5">
   
   <div class="text-center  mb-3 p-1 " >
-      <h2 class="text-center">CONTACTO</h2>
+      <h2 class="text-center h2">CONTACTO</h2>
       <hr class="mt-4 alert-dark hr-white">
   </div>
   <div >
-      <form action="enviar.php" method="post">
+      <form method="post" action="enviar.php">
         <div class="form-group">
           <label for="user">Nombre:</label>
           <input type="text" id="user" name="user" placeholder="Ingresa tu nombre" class="form-control">
@@ -235,11 +241,11 @@
           <input type="text" id="email" name="email" placeholder="Ingresa tu email" class="form-control">
         </div>
         <div class="form-group">
-          <label for="Escribir mensaje">Mensaje</label>
+          <label for="mensaje">Mensaje</label>
           <textarea name="mensaje" id="mensaje" placeholder="Escribe aqui" class="form-control"></textarea>
         </div>
           <div class="send mb-4 mt-4 text-center">
-              <button type="submit" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#myModal">
+              <button type="submit" name="enviar" class="btn btn-lg btn-outline-light" data-toggle="modal" data-target="#myModal">
                  Enviar 
               </button>
           </div>
@@ -272,7 +278,42 @@
   </div>
 </div>
 
-
+<!-- Modal GUADALUPE-->
+<div class="modal fade text-center" id="guadalupe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog text-center border border-light" >
+      <div class="modal-content text-center" style="background-image: url(img/1.jpg);" >
+         <div class="modal-header">
+              <h5 class="modal-title text-white" id="exampleModalLabel">PortFolio Fotógrafa</h5>
+              </button>
+          </div>
+          <div class="modal-body">
+               <img src="img/modelo.jpeg" alt="">
+          </div>
+          <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-primary mr-4">Ver página Web</button> -->
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+       </div>
+  </div> 
+</div>
+<!-- Modal MEUSHAR-->
+<div class="modal fade text-center" id="meushar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog text-center border border-light" >
+     <div class="modal-content text-center" style="background-image: url(img/1.jpg);" >
+        <div class="modal-header">
+             <h5 class="modal-title text-white" id="exampleModalLabel">Agencia Meushar</h5>
+             </button>
+         </div>
+         <div class="modal-body">
+              <img src="img/meushar1.jpg" class="img-fluid" alt="">
+         </div>
+         <div class="modal-footer">
+             <button type="button" class="btn mr-4" id="color-rosa"><a href="https://agenciameushar.com/" class="sacar-ref" target="t_blank">Ver página Web</a></button>
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+         </div>
+      </div>
+ </div>
+</div>
 
 <!------------------Footer(pie de pgina)-------------------->
 
@@ -281,6 +322,8 @@
       <p class="text-white">&copy; Federico Roca - 2020 | Todos los derechos reservados</p>
 </footer>
 </div>
+
+
 
 <script type="text/javascript">
   function googleTranslateElementInit() {
@@ -300,15 +343,12 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!--VERRRRRRRRRRRRRRR-->
-
-
-
-
-
+<!--VER-->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
